@@ -1,2 +1,2 @@
-export const username = "2201640100147"
-export const password = "2oVF8E3A15"
+export const username = "Your erp username"
+export const password = "Your password"
