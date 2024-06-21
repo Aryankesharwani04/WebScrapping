@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chettinadu Soups & Momo's</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-areas:
+                "header header header"
+                "sidebar main right-sidebar"
+                "footer footer footer";
+            height: 100vh;
+        }
+        header {
+            grid-area: header;
+            background-color: #f8f8f8;
+            padding: 10px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .sidebar, .right-sidebar {
+            background-color: yellow;
+            padding: 20px;
+        }
+        .sidebar {
+            grid-area: sidebar;
+        }
+        .right-sidebar {
+            grid-area: right-sidebar;
+        }
+        .main {
+            grid-area: main;
+            padding: 20px;
+        }
+        footer {
+            grid-area: footer;
+            background-color: #f8f8f8;
+            padding: 10px;
+            text-align: center;
+        }
+        .menu-list, .price-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .menu-list li, .price-list li {
+            margin: 5px 0;
+        }
+        .price-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .price-table th, .price-table td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            Chennaiexpress Soups & Momo's
+        </header>
+        <div class="sidebar">
+            <h2>Soups & Momo's</h2>
+            <hr>
+            <h3>Soup's</h3>
+            <ul class="menu-list">
+                <li>starbucks</li>
+                <li>Vegetable Soup</li>
+                <li>Chicken snake</li>
+                <li>Paya Soup</li>
+                <li>Crab Soup</li>
+            </ul>
+            <hr>
+            <h3>Momo's</h3>
+            <ul class="menu-list">
+                <li>Veg Momo's</li>
+                <li>Chicken Momo's</li>
+            </ul>
+        </div>
+        <div class="main">
+            <img src="https://myheartbeets.com/wp-content/uploads/2018/12/indian-party-menu.jpg" alt="Food images" style="width:100%;">
+        </div>
+        <div class="right-sidebar">
+            <table class="price-table">
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <th  colspan="2" bgcolor="orange">Soups</th>
+                </tr>
+                <tr>
+                    <td>Mushroom Soup</td>
+                    <td>20/-</td>
+                </tr>
+                <tr>
+                    <td>Vegetable Soup</td>
+                    <td>30/-</td>
+                </tr>
+                <tr>
+                    <td>Chicken Soup</td>
+                    <td>100/-</td>
+                </tr>
+                <tr>
+                    <td>Paya Soup</td>
+                    <td>45/-</td>
+                </tr>
+                <tr>
+                    <td>Crab Soup</td>
+                    <td>55/-</td>
+                </tr>
+                <tr>
+                    <th  colspan="2" bgcolor="orange">Momos</th>
+                </tr>
+                <tr>
+                    <td>Veg Momo's</td>
+                    <td>60/-</td>
+                </tr>
+                <tr>
+                    <td>Chicken Momo's</td>
+                    <td>70/-</td>
+                </tr>
+            </table>
+        </div>
+        <footer>
+            <a href="#">Chennaiexpress Soups & Momo's</a>
+        </footer>
+    </div>
+</body>
+</html>

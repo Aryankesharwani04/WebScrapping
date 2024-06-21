@@ -1,0 +1,20 @@
+{
+  "name": "attendancegetter",
+  "version": "1.0.0",
+  "description": "to get details from erp PSIT",
+  "main": "login.js",
+  "scripts": {
+    "test": "node login.js"
+  },
+  "keywords": [
+    "erp",
+    "username",
+    "attendance"
+  ],
+  "author": "Aryan Kesharwani",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^22.10.0"
+  },
+  "type" : "module"
+}
